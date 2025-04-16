@@ -618,90 +618,83 @@ nav ul li a:hover {
     color: #ccc;
 }
 
-/* Responsivitas */
-@media (max-width: 768px) {
-    /* Header */
+/* ========== Mobile Responsive ========== */
+@media screen and (max-width: 768px) {
     nav {
-        flex-direction: column;
-        gap: 10px;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
     }
-
+  
     nav ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
+      flex-direction: column;
+      gap: 8px;
     }
-
-    /* Hero Section */
+  
     .hero {
-        flex-direction: column;
-        text-align: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
     }
-
-    .hero-content, .hero-image {
-        max-width: 100%;
-    }
-
+  
     .hero-image {
-        margin-top: 20px;
+      margin-top: 20px;
     }
-
-    /* Publication Section */
-    .cards {
-        flex-direction: column;
-        align-items: center;
+  
+    .publication .cards {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
     }
-
-    .card {
-        width: 80%;
-    }
-
-    /* Feature Sections */
+  
     .feature-section {
-        flex-direction: column;
-        text-align: center;
+      flex-direction: column;
+      padding: 20px;
+      text-align: center;
     }
-
-    .feature-content, .feature-image {
-        max-width: 100%;
+  
+    .feature-graphic img {
+      width: 100%;
+      height: auto;
     }
-
-    .feature-graphic {
-        margin-top: 20px;
-        width: 100%;
-        height: 200px;
+  
+    .feature-wrapper {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
-
-    /* Value Proposition Section */
+  
     .value-section {
-        flex-direction: column;
-        text-align: center;
+      flex-direction: column;
+      padding: 20px;
+      text-align: center;
     }
-
-    .value-content, .value-image {
-        max-width: 100%;
-    }
-
+  
     .value-image {
-        margin-top: 20px;
+      margin-top: 20px;
     }
-
-    /* Value Cards Section */
+  
     .value-cards {
-        flex-direction: column;
-        align-items: center;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
     }
-
-    .value-card {
-        max-width: 80%;
+  
+    .footer-section {
+      flex-direction: column;
+      padding: 20px;
+      text-align: center;
     }
-
-    /* Footer Section */
+  
     .footer-column {
-        max-width: 100%;
-        text-align: center;
+      margin-bottom: 20px;
     }
-}
+  
+    .footer-bottom {
+      margin-top: 20px;
+    }
+  }
+  
 
 @media (max-width: 480px) {
     .hero-content h1, .value-content h1, .value-cards-section h1 {
@@ -716,3 +709,91 @@ nav ul li a:hover {
         font-size: 16px;
     }
 }
+
+@media screen and (max-width: 768px) {
+    /* NAVBAR */
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+      gap: 10px;
+    }
+    
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    /* HERO */
+    .hero {
+      padding: 80px 20px;
+    }
+  
+    .hero h1 {
+      font-size: 32px;
+    }
+  
+    .hero p {
+      font-size: 16px;
+    }
+  
+    /* FEATURE SECTION */
+    .feature-section {
+      flex-direction: column;
+      padding: 80px 20px;
+      text-align: center;
+    }
+  
+    .feature-content {
+      padding-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    /* VALUE SECTION */
+    .value-section {
+      flex-direction: column;
+      padding: 80px 20px;
+      text-align: center;
+    }
+  
+    .value-content {
+      padding-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    /* VALUE CARDS */
+    .value-cards-section {
+      padding: 80px 20px;
+    }
+  
+    .value-cards {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .card {
+      padding: 20px;
+    }
+  
+    /* BACKGROUND SHAPES */
+    .background-shapes {
+      display: none;
+    }
+    /* Gambar di section-feature dan lainnya */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Jika kamu pakai class khusus untuk gambar seperti .feature-image */
+  .feature-section img,
+  .value-section img,
+  .value-cards img {
+    max-width: 100%;
+    height: auto;
+  }
+  }
+  
